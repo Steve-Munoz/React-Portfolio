@@ -1,6 +1,9 @@
 import React from "react";
-import NavbarComp from "./components/Navbar";
+// import NavbarComp from "./components/Navbar";
 import Footer from "./components/Footer";
+import Home from "./components";
+import CssBaseline from "@material-ui/core/CssBaseline"; // adds some default visual styling to default elements, resets passing, resets styles
+
 // import AboutMe from "./pages/AboutMe";
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -9,11 +12,10 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
-      <NavbarComp />
-      <h1> hello</h1>
-      <Footer />
-    </div>
+    <>
+      <CssBaseline />
+      <Home />
+    </>
 
     // <Router>
     //   <NavbarComp />

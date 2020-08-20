@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   menuSlider: {
     width: 250,
     background: "#511",
-    height: "100%",
+    height: "30rem",
   },
   stevePic: {
     display: "block",

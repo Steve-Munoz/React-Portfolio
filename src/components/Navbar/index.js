@@ -25,6 +25,7 @@ import {
 } from "@material-ui/icons";
 
 import StevePic from "../../images/stevePic.JPG";
+import Footer from "../Footer";
 
 // CSS STYLES
 const useStyles = makeStyles((theme) => ({
@@ -117,6 +118,7 @@ const Navbar = () => {
               onClose={toggleSlider("right", false)}
             >
               {sideList("right")}
+              <Footer />
             </RightMenuSlider>
           </Toolbar>
         </AppBar>

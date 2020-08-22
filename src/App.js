@@ -5,6 +5,7 @@ import Home from "./components";
 import CssBaseline from "@material-ui/core/CssBaseline"; // adds some default visual styling to default elements, resets passing, resets styles
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
+import Contacts from "./components/Contact";
 import { Route } from "react-router-dom";
 // import AboutMe from "./pages/AboutMe";
 
@@ -17,6 +18,7 @@ function App() {
       <Route exact path="/" component={Home} />
       <Route path="/resume" component={Resume} />
       <Route path="/portfolio" component={Portfolio} />
+      <Route path="/contacts" component={Contacts} />
     </>
   );
 }

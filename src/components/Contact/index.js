@@ -10,9 +10,10 @@ const useStyles = makeStyles((theme) => ({
     left: "50%",
     transform: "translate(-50%, -50%)",
     position: "absolute",
+    width: "80%",
   },
   button: {
-    marginTop: "1rem",
+    // marginTop: "1rem",
     color: "tomato",
     borderColor: "tomato",
   },

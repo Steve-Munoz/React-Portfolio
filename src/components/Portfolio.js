@@ -10,15 +10,24 @@ import {
   CardMedia,
   Button,
   Typography,
+  Paper,
 } from "@material-ui/core";
 import Navbar from "./Navbar";
 import project1 from "../images/trailMePic.JPG";
 import project2 from "../images/Orchard.JPG";
 // import classes from "*.module.css";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: "center",
+    color: theme.palette.text.secondary,
+  },
   mainContainer: {
-    background: "#233",
+    // background: "#233",
     height: "100%",
   },
   cardContainer: {
@@ -26,7 +35,7 @@ const useStyles = makeStyles({
 
     margin: "5rem auto",
   },
-});
+}));
 
 const Portfolio = () => {
   const classes = useStyles();
@@ -35,7 +44,7 @@ const Portfolio = () => {
       <Navbar />
       <Grid container justify="center">
         {/* Project 1 */}
-        <Grid item xs={12} sm={8} md={6}>
+        <Grid item xs={12} sm={12} md={12} lg={6}>
           <Card className={classes.cardContainer}>
             <CardActionArea>
               <CardMedia
@@ -64,7 +73,7 @@ const Portfolio = () => {
           </Card>
         </Grid>
         {/* Project 2 */}
-        <Grid item xs={12} sm={8} md={6}>
+        <Grid item xs={12} sm={12} md={12} lg={6}>
           <Card className={classes.cardContainer}>
             <CardActionArea>
               <CardMedia
@@ -93,7 +102,7 @@ const Portfolio = () => {
           </Card>
         </Grid>
         {/* Project 3 */}
-        <Grid item xs={12} sm={8} md={6}>
+        <Grid item xs={12} sm={12} md={12} lg={6}>
           <Card className={classes.cardContainer}>
             <CardActionArea>
               <CardMedia

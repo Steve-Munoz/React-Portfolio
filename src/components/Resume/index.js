@@ -5,7 +5,8 @@ import Navbar from "../Navbar";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#233",
+    background: "#22333360",
+    height: "100vh",
   },
   timeLine: {
     position: "relative",

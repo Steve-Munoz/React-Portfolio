@@ -30,9 +30,9 @@ import Footer from "../Footer";
 // CSS STYLES
 const useStyles = makeStyles((theme) => ({
   menuSlider: {
-    width: 250,
+    width: "70vw",
     background: "#511",
-    height: "30rem",
+    height: "100vh",
   },
   stevePic: {
     display: "block",

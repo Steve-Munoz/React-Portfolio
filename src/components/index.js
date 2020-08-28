@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Header from "./Header";
 import Particles from "react-particles-js";
 import { makeStyles } from "@material-ui/styles";
+import Footer from "./Footer";
 
 const useStyles = makeStyles({
   particlesCanva: {

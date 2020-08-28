@@ -41,10 +41,19 @@ const InputField = withStyles({
   },
 })(TextField);
 
+
+
+
 const Contacts = () => {
   const classes = useStyles();
   return (
-    <Box component="div" style={{ background: "#233", height: "100vh" }}>
+    <Box
+      component="div"
+      style={{ background: "#233", height: "100vh" }}
+      action="https://formspree.io/xrgywgyp"
+      method="POST"
+      enctype="multipart/form-data"
+    >
       <Navbar />
       <Grid container justify="center">
         <Box component="form" className={classes.form}>
@@ -99,4 +108,4 @@ const Contacts = () => {
   );
 };
 
-export default Contacts;
+export Contacts;

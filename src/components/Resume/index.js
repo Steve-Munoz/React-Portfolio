@@ -206,7 +206,6 @@ const Resume = () => {
             </Typography>
           </Box>
         </Box>
-        <Footer />
       </Box>
     </>
   );

@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.text.secondary,
   },
   mainContainer: {
-    height: "100%",
+    height: "100vh",
     paddingTop: "40px",
   },
   cardContainer: {
@@ -211,7 +211,6 @@ const Portfolio = () => {
           </Card>
         </Grid>
       </Grid>
-      <Footer />
     </Box>
   );
 };

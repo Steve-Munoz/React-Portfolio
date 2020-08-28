@@ -2,10 +2,12 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box } from "@material-ui/core";
 import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#233",
+    background: "#22333360",
+    height: "100vh",
   },
   timeLine: {
     position: "relative",
@@ -204,6 +206,7 @@ const Resume = () => {
             </Typography>
           </Box>
         </Box>
+        <Footer />
       </Box>
     </>
   );

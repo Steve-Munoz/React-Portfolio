@@ -17,7 +17,7 @@ import {
 } from "@material-ui/core";
 
 import {
-  ArrowBack,
+  Menu,
   AssignmentInd,
   Home,
   Apps,
@@ -30,9 +30,9 @@ import Footer from "../Footer";
 // CSS STYLES
 const useStyles = makeStyles((theme) => ({
   menuSlider: {
-    width: 250,
+    width: "30vw",
     background: "#511",
-    height: "30rem",
+    height: "100vh",
   },
   stevePic: {
     display: "block",
@@ -65,10 +65,6 @@ const menuItems = [
     listText: "Contacts",
     listPath: "/contacts",
   },
-  // {
-  //   listIcon: <Contacts />,
-  //   listText: "Contacts",
-  // },
 ];
 const Navbar = () => {
   const [state, setState] = useState({
@@ -104,10 +100,10 @@ const Navbar = () => {
   return (
     <>
       <Box component="nav">
-        <AppBar position="static" style={{ background: "#222" }}>
+        <AppBar position="fixed" style={{ background: "#222" }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
-              <ArrowBack style={{ color: "tomato" }} />
+              <Menu style={{ color: "tomato" }} />
             </IconButton>
             <Typography variant="h5" style={{ color: "white" }}>
               Steve Munoz
@@ -128,29 +124,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-// import React from "react";
-// import { Navbar, Nav } from "react-bootstrap";
-// import "./style.css";
-
-// function NavbarComp() {
-//   return (
-//     <Navbar
-//       className="navbar navbar-expand-sm navbar-dark bg-dark fixed-top"
-//       expand="lg"
-//     >
-//       <Navbar.Brand href="#home">Steve Munoz</Navbar.Brand>
-//       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-//       <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-//         <Nav>
-//           <Nav.Link href="#home">About Me</Nav.Link>
-//           <Nav.Link href="#link">Portfolio</Nav.Link>
-//           <Nav.Link href="#link">Contact</Nav.Link>
-//           <Nav.Link href="#link">Skills</Nav.Link>
-//         </Nav>
-//       </Navbar.Collapse>
-//     </Navbar>
-//   );
-// }
-
-// export default NavbarComp;

@@ -177,7 +177,7 @@ const Portfolio = () => {
             <CardActionArea>
               <CardMedia
                 component="img"
-                alt="Project 4"
+                alt="Project 4-test"
                 image={project4}
                 height="150"
                 padding-bottom ="100px"

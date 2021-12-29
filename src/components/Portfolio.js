@@ -16,8 +16,8 @@ import Navbar from "./Navbar";
 import project1 from "../images/trailMePic.JPG";
 import project2 from "../images/Orchard.JPG";
 import project3 from "../images/note-Taker.JPG";
-import project4 from "../images/WorkDaySchedular.JPG";
-import Footer from "./Footer";
+import project4 from "../images/PicSome.jpg";
+import Footer from "./Footer/index";
 // import classes from "*.module.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -169,19 +169,23 @@ const Portfolio = () => {
             </CardActions>
           </Card>
         </Grid>
-        {/* Project 4 */}
-        <Grid item xs={12} sm={8} md={6} lg={6}>
+        
+
+         {/* Project 4 */}
+         <Grid item xs={12} sm={8} md={6} lg={6}>
           <Card className={classes.cardContainer}>
             <CardActionArea>
               <CardMedia
                 component="img"
                 alt="Project 4"
                 image={project4}
-                height="140"
+                height="150"
+                padding-bottom ="100px"
+                
               />
               <CardContent>
                 <Typography gutterBottom variant="h5">
-                  Work Day Schedular
+                  Steve's Picture Gallery
                 </Typography>
                 <Typography
                   variant="body2"
@@ -195,7 +199,7 @@ const Portfolio = () => {
                 size="small"
                 color="primary"
                 target="_blank"
-                href="https://github.com/Steve-Munoz/Work-Day-Scheduler"
+                href="https://github.com/Steve-Munoz/Steve-s-Picture-Gallery"
               >
                 GitHub Repo
               </Button>
@@ -203,7 +207,7 @@ const Portfolio = () => {
                 size="small"
                 color="primary"
                 target="_blank"
-                href="https://steve-munoz.github.io/Work-Day-Scheduler/"
+                href="https://steves-picture-gallery.herokuapp.com/"
               >
                 Deployed Link
               </Button>
@@ -211,6 +215,7 @@ const Portfolio = () => {
           </Card>
         </Grid>
       </Grid>
+    
     </Box>
   );
 };
